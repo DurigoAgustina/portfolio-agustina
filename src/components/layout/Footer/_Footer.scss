@@ -1,0 +1,21 @@
+@use '../../../styles/variables';
+
+.footer {
+  background-color: variables.$brand;
+  height: 180px;
+  display: flex;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 30px;
+  }
+}
