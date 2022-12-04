@@ -1,9 +1,8 @@
 import './_Title.scss'
 
-
-const Title = () => {
+const Title = ({Type, children, color}) => {
   return (
-    <div>Title</div>
+    <Type className={`title title-${Type} title-${color}`}>{ children }</Type>
   )
 }
 
