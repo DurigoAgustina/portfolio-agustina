@@ -10,16 +10,19 @@
 html {
   font-size: 62.5%;
   font-family: variables.$principal-font;
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
   font-size: 1.6rem;
   background-color: variables.$background;
+  color: variables.$high-emphasis;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 li {
@@ -30,4 +33,10 @@ img {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
