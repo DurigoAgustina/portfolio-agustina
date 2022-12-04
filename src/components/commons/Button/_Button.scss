@@ -1,0 +1,32 @@
+@use '../../../styles/variables';
+
+.button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: variables.$principal-font;
+  padding: 10px 25px;
+  width: min-content;
+  white-space: nowrap;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  &-primary {
+    background-color: variables.$brand;
+
+    &:hover{
+      background-color: variables.$brand-hover;
+    }
+  }
+
+  &-outline {
+    border: 1px solid variables.$high-emphasis;
+
+    &:hover {
+      background-color: variables.$high-emphasis;
+      color: variables.$white;
+    }
+  }
+}
