@@ -1,0 +1,51 @@
+
+.about {
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+
+  &__me {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__icons {
+    padding-top: 20px;
+    display: flex;
+    gap: 15px;
+  }
+
+  &__image {
+    width: 50%;
+
+    img{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .about {
+    text-align: center;
+    &__me {
+      width: 100%;
+    }
+    &__icons {
+    justify-content: center;
+    }
+    &__image {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .about {
+
+    &__image {
+      display: none;
+    }
+  }
+}
