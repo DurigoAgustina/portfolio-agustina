@@ -12,13 +12,13 @@ const Footer = () => {
         <Title Type='h2'>Contacto</Title>
         <div className='footer__icons'>
           <a href='mailto:agustinadurigo@gmail.com'>
-            <Img image={email}/>
+            <Img icon image={email}/>
           </a>
           <a href='https://github.com/DurigoAgustina'>
-            <Img image={github}/>
+            <Img icon image={github}/>
           </a>
           <a href='https://www.linkedin.com/in/agustinadurigo/'>
-            <Img image={linkedin}/>
+            <Img icon image={linkedin}/>
           </a>
         </div>
       </div>
