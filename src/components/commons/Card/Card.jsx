@@ -1,19 +1,21 @@
 import Title from '../Title/Title'
 import Paragraph from '../Paragraph/Paragraph'
-import img1 from '../../../assets/img1.png'
 import './_Card.scss'
 import Button from '../Button/Button'
+import Img from '../Img/Img'
+import { Link } from 'react-router-dom'
 
-const Card = ({flexDirection}) => {
+const Card = ({ title, img, paragraph}) => {
+
   return (
-    <div className={`card card-${flexDirection}`}>
-      <div className='card__info-project'>
-        <Title Type='h3'>Nombre del proyecto</Title>
-        <Paragraph>I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</Paragraph>
-        <Button variant='outline'>Ver proyecto</Button>
-      </div>
+    <div className='card container'>
       <div>
-        <img src={img1} className='card__img' />
+        <Img image={img} className='card__img' />
+      </div>
+      <div className='card__info-project'>
+        <Title Type='h3'>{title}</Title>
+        <Paragraph>{paragraph}</Paragraph>
+        <Button variant='outline'><Link to='/'>Ver proyecto</Link></Button>
       </div>
     </div>
   )
