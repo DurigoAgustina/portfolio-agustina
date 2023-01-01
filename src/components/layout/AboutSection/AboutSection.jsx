@@ -14,7 +14,9 @@ const AboutSection = () => {
     <section className='container about' id='sobre-mi'>
       <div className='about__me'>
         <Title Type='h1'>Sobre mí</Title>
-        <Paragraph>Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis tortor neque auctor dis ipsum. Pretium cras amet odio amet eleifend id sed cras sed. Aliquet risus posuere aliquet imperdiet sit.</Paragraph>
+        <Paragraph>Hola! Soy frontend developer y amo desarrollar interfaces de usuarios con React y SASS / Styled Components.</Paragraph>
+        <Paragraph>Soy una apasionada por la programación y me encanta el diseño UX/UI.</Paragraph>
+        <Paragraph>Estoy en búsqueda constante de desafíos que me empujen a superarme y crecer.</Paragraph>
         <div className='about__icons'>
           <Img icon image={html} />
           <Img icon image={css} />
