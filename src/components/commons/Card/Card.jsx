@@ -1,11 +1,10 @@
 import Title from '../Title/Title'
-import Paragraph from '../Paragraph/Paragraph'
 import './_Card.scss'
 import Button from '../Button/Button'
 import Img from '../Img/Img'
 import { Link } from 'react-router-dom'
 
-const Card = ({ title, img, paragraph}) => {
+const Card = ({ title, img }) => {
 
   return (
     <div className='card container'>
@@ -14,7 +13,6 @@ const Card = ({ title, img, paragraph}) => {
       </div>
       <div className='card__info-project'>
         <Title Type='h3'>{title}</Title>
-        <Paragraph>{paragraph}</Paragraph>
         <Button variant='outline'><Link to='/'>Ver proyecto</Link></Button>
       </div>
     </div>
