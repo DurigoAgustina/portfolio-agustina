@@ -1,8 +1,8 @@
 import './_Paragraph.scss'
 
-const Paragraph = () => {
+const Paragraph = ({children}) => {
   return (
-    <div>Paragraph</div>
+    <p className='paragraph'>{children}</p>
   )
 }
 
