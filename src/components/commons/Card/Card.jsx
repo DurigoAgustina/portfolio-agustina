@@ -2,10 +2,9 @@ import Title from '../Title/Title'
 import './_Card.scss'
 import Button from '../Button/Button'
 import Img from '../Img/Img'
-import { Link } from 'react-router-dom'
 
-const Card = ({ title, img }) => {
-
+const Card = ({ title, img, href}) => {
+  console.log(href)
   return (
     <div className='card container'>
       <div>
@@ -13,7 +12,7 @@ const Card = ({ title, img }) => {
       </div>
       <div className='card__info-project'>
         <Title Type='h3'>{title}</Title>
-        <Button variant='outline'><Link to='/'>Ver proyecto</Link></Button>
+        <Button variant='outline'><a href={href} target='_blank'>Ver proyecto</a></Button>
       </div>
     </div>
   )

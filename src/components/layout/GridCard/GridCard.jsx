@@ -7,10 +7,11 @@ const GridCard = () => {
   return (
     <div className='gridcard'>
       {
-        cards.map( ({id, image, title}) => (
+        cards.map( ({id, image, title, href}) => (
           <Card
             title={title}
             img={image}
+            href={href}
             key={id}
           />
         ))
