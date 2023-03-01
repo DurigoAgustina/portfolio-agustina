@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import { menu } from '../../../utils/menu'
 import './_Header.scss'
 const Header = () => {
 
   const [isOpen, setIsOpen] = useState(false)
+  
 
   return (
     <header className='header'>
@@ -14,10 +16,11 @@ const Header = () => {
         </div>
         <nav>
           <ul className={`header__nav ${isOpen && 'open' }`}>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            {
+              menu.map(({id, category, href}) => (
+                <li key={id}> <a href={`#${href}`}>{category}</a></li>
+              ))
+            }
           </ul>
         </nav>
         <div className={`header__toggle ${isOpen && 'open'}`} onClick={() => setIsOpen(!isOpen)}>
