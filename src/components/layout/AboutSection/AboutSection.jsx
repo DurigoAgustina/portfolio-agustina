@@ -6,6 +6,7 @@ import css from '../../../assets/css.svg'
 import javascript from '../../../assets/javascript.svg'
 import sass from '../../../assets/sass.svg'
 import react from '../../../assets/react.svg'
+import styledComponents from '../../../assets/styledComponents.png'
 import './_AboutSection.scss'
 import Img from '../../commons/Img/Img'
 
@@ -23,6 +24,7 @@ const AboutSection = () => {
           <Img icon image={sass} />
           <Img icon image={javascript} />
           <Img icon image={react} />
+          <Img icon image={styledComponents} />
         </div>
       </div>
 
