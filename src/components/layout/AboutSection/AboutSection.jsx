@@ -21,9 +21,9 @@ const AboutSection = () => {
         <div className='about__icons'>
           <Img icon image={html} />
           <Img icon image={css} />
-          <Img icon image={sass} />
           <Img icon image={javascript} />
           <Img icon image={react} />
+          <Img icon image={sass} />
           <Img icon image={styledComponents} />
         </div>
       </div>
