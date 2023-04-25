@@ -1,5 +1,6 @@
 import ProyectoTienda from '../assets/proyecto-tienda.png'
 import MercadoLibre from '../assets/mercadolibre-clon.png'
+import PlanificadorPresupuesto from '../assets/planificador-presupuesto.png'
 
 const cards = [
   {
@@ -16,9 +17,9 @@ const cards = [
   },
   {
     id: 3,
-    title: 'Nombre del proyecto 3',
-    image: ProyectoTienda,
-    href: '/'
+    title: 'Planificador de Presupuesto',
+    image: PlanificadorPresupuesto,
+    href: 'https://planificador-presupuesto.netlify.app/'
   }
 ]
 
